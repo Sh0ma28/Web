@@ -25,7 +25,7 @@ p {
 	overflow: hidden;
 }
 
-.page--memes {
+.page--sub {
 	font-family: 'Istok Wed', sans-serif;
 }
 
@@ -37,7 +37,7 @@ p {
 	margin: 0 auto;
 }
 
-.container--memes {
+.container--sub {
 	max-width: 1600px;
 }
 
@@ -53,7 +53,7 @@ p {
 	z-index: 1000;
 }
 
-.header--memes {
+.header--sub {
 	background-color: black;
 }
 
@@ -68,7 +68,7 @@ p {
 	color: black;
 }
 
-.header--memes__logo {
+.header--sub__logo {
 	color: white;
 }
 
@@ -91,7 +91,7 @@ p {
 	transition: color .1s linear; 	
 }
 
-.nav--memes__link {
+.nav--sub__link {
 	color: white;
 }
 
@@ -117,9 +117,9 @@ p {
 	color: yellow;
 }
 
-.nav--memes__link:after,
-.nav--memes__link:hover, {
-	color: ;
+.nav--sub__link:after,
+.nav--sub__link:hover, {
+	color: yellow;
 }
 
 .nav__link:hover:after {
@@ -142,7 +142,7 @@ p {
 
 }
 
-.intro--memes {
+.intro--sub {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -194,7 +194,7 @@ p {
 	color: white;
 }
 
-.section--memes{
+.section--sub{
 	background: #5ee1b7;
 }
 
@@ -527,9 +527,6 @@ p {
 	box-shadow: 20px -15px 10px 5px rgba(0, 0, 0, .5);
 }
 
-.memes__img {
-}
-
 .memes__img img {
 	display: block;
 	max-width: 100%;
@@ -551,6 +548,51 @@ p {
 	color: black;
 	font-size: 48px;
 	text-align: left;
+}
+
+/* Table */
+.table {
+	width: 100%;
+
+	color: black;
+	background: #e2e2e2;
+	border: 1px solid grey;
+	border-collapse: collapse;
+	box-shadow: 15px -10px 5px 0px rgba(0, 0, 0, .5);
+}
+
+.table__title {
+	padding: 10px;
+	border: 1px solid black;
+	font-size: 40px;
+}
+
+.table__row {
+	border: 1px solid black;
+}
+
+.table__drink {
+	padding: 15px;
+	border: 1px solid black;
+	font-size: 32px;
+}
+
+.table__icon {
+	border: 1px solid black;
+}
+
+.table__icon img {
+	display: block;
+	max-width: 50%;
+    height: auto;
+
+    margin: auto;
+}
+
+.table__comments {
+	padding: 10px;
+	border: 1px solid black;
+	font-size: 28px;
 }
 
 @media (max-width: 1440px) {
@@ -647,6 +689,7 @@ p {
     	width: 80%
     }
 
+    /* Contacts */
     .contacts {
 	margin-top: 30px;
 	}
@@ -654,6 +697,24 @@ p {
 	/* Memes */
 	.memes__text {
 		font-size: 40px;
+	}
+
+	/* Table */
+	.table__title {
+		padding: 10px;
+		font-size: 28px;
+	}
+
+	.table__drink {
+		font-size: 24px;
+	}
+
+	.table__icon {
+
+	}
+
+	.table__comments {
+		font-size: 22px;
 	}
 
 }
@@ -665,8 +726,27 @@ p {
 		font-size: 36px;
 	}
 
+	/* Nav */
 	.nav {
 		font-size: 18px;
+	}
+
+	/* Intro */
+	.intro__suptitle {
+		font-size: 44px;
+	}
+
+	.intro__title {
+		font-size: 52px;
+	}
+
+	.intro__subtitle {
+		font-size: 36px;
+	}
+
+	.intro__title:after {
+		width: 100%;
+		margin: 30px auto 30px;
 	}
 
 	/* About */
@@ -675,12 +755,14 @@ p {
 		justify-content: space-around;
 	}
 
+	/* Card */
 	.card__item, .myPhoto {
 		max-width: 280px;
+		margin: 10px 5px;
 	}
 
 	.myPhoto {
-		margin: 15px auto;
+		margin: 10px auto;
 	}
 
 	.card__text {
@@ -690,6 +772,11 @@ p {
 	/* City */
 	.city {
 		flex-direction: column;
+	}
+
+	/* Skills */
+	.skills__title:after {
+		margin: 20px auto 20px;
 	}
 
 }
@@ -716,7 +803,7 @@ p {
 
 	/* Section */
 	.section {
-		padding: 40px 0;
+		padding: 20px 0;
 	}
 
 	.section__suptitle {
@@ -725,6 +812,10 @@ p {
 
 	.section__title {
 		font-size: 32px;
+	}
+
+	.section__title:after {
+		margin: 10px auto 10px;
 	}
 
 	.section__text {
@@ -747,10 +838,20 @@ p {
 	/* Statistics */
     .stat__item {
         width: 100%;
+		padding: 15px 15px;
     }
 
     .stat__num {
         font-size: 52px;
+    }
+
+    /* Footer */
+    .footer {
+    	padding: 20px;
+    }
+
+    .footer__inner {
+    	padding-bottom: 10px;
     }
 
     /* Memes */
@@ -758,15 +859,39 @@ p {
 		font-size: 32px;
 	}
 
+	/* Table */
+	.table__title {
+		padding: 5px;
+		font-size: 24px;
+	}
+
+	.table__drink {
+		padding: 5px;
+		font-size: 20px;
+	}
+
+	.table__icon {
+
+	}
+
+	.table__comments {
+		padding: 5px;
+		font-size: 18px;
+	}
 }
 
 @media (max-width: 500px) {
 
 	/* Header */
+	.header{
+		padding-top: 10px;
+	}
+	
 	.header__logo {
 		font-size: 24px;
 	}
 
+	/* Nav */
 	.nav {
 		display: flex;
 		flex-direction: column;
@@ -774,10 +899,14 @@ p {
 	}
 
 	.nav__link {
-		margin: 10px;
+		margin: 5px;
 	}
 
 	/* Intro */
+	.intro--sub {
+		padding: 120px 20px 30px;
+	}
+
 	.intro__suptitle {
 		font-size: 20px;
 	}
@@ -786,7 +915,18 @@ p {
 		font-size: 28px;
 	}
 
+	.intro__title:after {
+		margin: 15px auto 15px;
+	}
+
+	.intro__subtitle {
+		font-size: 18px;
+	}
+
 	/* Section */
+	.section--sub {
+		padding: 0;
+	}
 	.section__header {
 		margin: auto 6px;
 	}
@@ -810,6 +950,7 @@ p {
 
 	/* Statistics */
     .stat__num {
+    	margin-bottom: 5px;
     	font-size: 28px;
     }
 
@@ -822,8 +963,16 @@ p {
     	font-size: 18px;
     }
 
+    .skills__title:after {
+		margin: 10px auto 10px;
+	}
+
 	.skill__title {
 		font-size: 14px;
+	}
+
+	.skill__title:after {
+		margin: 5px auto 5px;
 	}
 
 	.skill__text {
@@ -839,6 +988,7 @@ p {
     	font-size: 10px;
     }
 
+    /* Contacts */
     .contacts__title {
 		font-size: 18px;
 	}
@@ -853,7 +1003,27 @@ p {
 
 	/* Memes */
 	.memes__text {
-		font-size: 24px;
+		font-size: 20px;
+	}
+
+	/* Table */
+	.table__title {
+		padding: 3px;
+		font-size: 16px;
+	}
+
+	.table__drink {
+		padding: 2px;
+		font-size: 14px;
+	}
+
+	.table__icon {
+
+	}
+
+	.table__comments {
+		padding: 2px;
+		font-size: 12px;
 	}
 }
 
